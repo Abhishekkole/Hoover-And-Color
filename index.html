@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hoover and Color</title>
+</head>
+<body>
+    <
+
+    <form id="grid-form">
+       <div class="grid-choices-container">
+            <div class="grid-choices">
+                 <label for="number">Custom Grid:</label>
+                <input type="number" name="number" id="custom-grid" min="2" max="100" style="width: 100px; padding-left: 5px;" placeholder="2-100">
+            </div>
+        
+            <div class="grid-choices">
+                 <label for="selection">Select Grid:</label>
+                <select name="grid" id="grid">
+                <option value="" disabled selected>Select</option>
+                <option value="16">16x16</option>
+                <option value="32">32x32</option>
+                <option value="64">64x64</option>
+                <option value="100">100x100</option>
+                </select>
+            </div>
+        
+        </div>
+    </form>
+
+    <div class="big-container">
+        <h1>Hoover and Color</h1>
+        <div class="tools">
+            <input type="color" value="#000000" class="custom-color">
+            <button class="shade"></button>
+            <button class="rgb"></button>    
+            <button class="clear">CLEAR</button>
+            <a href="https://github.com/Abhishekkole"  target="_blank" ></a>
+        </div>
+       
+        <div class="container"></div>
+        <button class="new-grid">New Grid</button> 
+        <div class="link">
+            <a href="https://www.linkedin.com/in/abhishekkole/"  target="_blank"></a>
+        </div>
+       
+         
+    
+    </div>
+    
+   
+
+    <div class="modal-container">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p class="message"></p>
+          <div class="modal-buttons">
+                <button type="button" id="ok">Ok</button>
+                <button type="button" id="cancel">Cancel</button>
+          </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
